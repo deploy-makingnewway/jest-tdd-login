@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  db:
+    container_name: jest_tdd_login_db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Postgres#2019
+      POSTGRES_DB: jest_tdd_login
+    ports:
+      - "5432:5432"
