@@ -9,8 +9,7 @@ module.exports = {
     database: process.env.DB_NAME || 'jest_tdd_login',
     dialect: process.env.DB_DIALECT || 'postgres',
     port: process.env.DB_PORT || 5432,
-    storage: '.__tests__/test/database.sqlite',
-    operatorsAliases: false,
+    storage: './__tests__/database.sqlite',
     logging: false,
     define: {
         timestamps: true,
